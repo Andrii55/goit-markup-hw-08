@@ -1,0 +1,42 @@
+
+// ---------BASE---------
+
+@import './base/reset';
+@import './base/common.scss';
+@import './base/hidden.scss';
+
+
+// ----------UTILIS---------
+
+@import './utils/variables';
+@import './utils/placeholder';
+
+// ---------COMPONENTS---------
+
+@import './components/container';
+@import './components/title';
+
+
+// ---------LAYOTS---------
+
+@import './layots/header';
+@import './layots/hero';
+@import './layots/details';
+@import './layots/work';
+@import './layots/team';
+@import './layots/customers';
+@import './layots/footer';
+@import './layots/forma';
+@import './layots/modal';
+
+
+
+
+
+
+
+
+
+
+
+

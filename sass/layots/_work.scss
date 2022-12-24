@@ -1,0 +1,26 @@
+
+.work{
+    background-color: #FFFFFF
+}
+
+.work__container {
+   padding-top: 0px;
+   padding-bottom: 95px;
+   
+}
+
+.work__title {
+text-align: center;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+
+.work__link {
+    display: flex;
+
+    & .work__links:not(:last-child) {
+        margin-right: 30px;
+        }
+}
