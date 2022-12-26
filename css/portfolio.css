@@ -67,7 +67,7 @@ body {
 }
 
 .header__container {
-  display: flex;
+  display: flax;
   align-items: center;
 }
 
@@ -83,7 +83,6 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
-
 .header__logo > span {
   color: #2196F3;
 }
@@ -91,31 +90,8 @@ body {
 .header__list {
   display: flex;
 }
-
 .header__list .header__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header__link:hover,
-.header__link:focus,
-.header__link:active {
-  color: var(--accent-color);
-}
-
-.header__active:visited {
-  color: var(--accent-color);
-}
-
-.header__active::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: var(--accent-color);
-  border-radius: 2px;
 }
 
 .header__link {
@@ -133,14 +109,35 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.header__link:hover, .header__link:focus, .header__link:active {
+  color: var(--accent-color);
+}
+
+.header__active:visited {
+  color: var(--accent-color);
+}
+.header__active:visited::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
 
 .header__contact {
   margin-left: auto;
   display: flex;
 }
+.header__contact .header__item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .header__contacts {
-  display: flex;
+  display: flax;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -152,13 +149,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
-.header__contact .header__item:not(:last-child) {
-  margin-right: 40px;
-}
-
-.header__contacts:hover,
-.header__contacts:focus {
+.header__contacts:hover, .header__contacts:focus {
   color: #2196F3;
 }
 
@@ -166,9 +157,7 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.header__icon__envelope:hover,
-.header__icon__envelope:focus {
+.header__icon__envelope:hover, .header__icon__envelope:focus {
   fill: currentColor;
 }
 
@@ -176,9 +165,7 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.header__icon__smartphone:hover,
-.header__icon__smartphone:focus {
+.header__icon__smartphone:hover, .header__icon__smartphone:focus {
   fill: currentColor;
 }
 
@@ -190,7 +177,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .work__list .works__btn:not(:last-child) {
   margin-right: 10px;
 }
@@ -211,9 +197,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
-.works__btn__item:hover,
-.works__btn__item:focus {
+.works__btn__item:hover, .works__btn__item:focus {
   background-color: #2196F3;
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -229,13 +213,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
-.portfolio__list .portfolio__list__name:not(:last-child) {
-  margin-right: 27px;
-}
-
 .portfolio__list:not(:last-child) {
   margin-bottom: 30px;
+}
+.portfolio__list .portfolio__list__name:not(:last-child) {
+  margin-right: 27px;
 }
 
 .portfolio__list__name {
@@ -244,23 +226,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
+.portfolio__list__name:hover, .portfolio__list__name:focus {
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio__list__name > .portfolio__border {
   padding-top: 20px;
   border-bottom: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
-}
-
-.portfolio__list__name:hover,
-.portfolio__list__name:focus {
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio__thumb {
-  position: relative;
-  overflow: hidden;
 }
 
 .portfolio__img__text {
@@ -281,6 +255,10 @@ body {
   transition-timing-function: linear;
 }
 
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio__thumb:hover .portfolio__img__text {
   transform: translateY(0%);
 }
@@ -330,7 +308,6 @@ body {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-
 .footer__address__logo > span {
   color: #2196F3;
 }
@@ -373,7 +350,6 @@ body {
   width: 44px;
   height: 44px;
 }
-
 .footer__soc__items:not(:last-child) {
   margin-right: 10px;
 }
@@ -381,8 +357,8 @@ body {
 .footer__soc__link {
   width: 100%;
   height: 100%;
-  display: flex;
   justify-content: center;
+  display: flax;
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -391,7 +367,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
 .footer__soc__link:hover {
   background-color: #2196F3;
 }
@@ -435,38 +410,33 @@ body {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
-.footer__form__email:hover,
-.footer__form__email:focus {
+.footer__form__email:hover, .footer__form__email:focus {
   outline: transparent;
   border-color: var(--accent-color);
 }
-
 .footer__form__email::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
+  display: flax;
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__form__email:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
+  display: flax;
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__form__email::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
+  display: flax;
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -482,7 +452,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: flax;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -494,4 +464,4 @@ body {
   height: 24px;
   width: 24px;
   fill: #FFFFFF;
-}
+}/*# sourceMappingURL=portfolio.css.map */
