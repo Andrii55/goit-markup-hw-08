@@ -67,7 +67,7 @@ body {
 }
 
 .header__container {
-  display: flax;
+  display: flex;
   align-items: center;
 }
 

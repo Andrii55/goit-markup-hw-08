@@ -4,7 +4,7 @@
 }
 
 .header__main {
-    display: flax;
+    display: flex;
     align-items: center;
 }
 
@@ -40,10 +40,10 @@ color: #000000;
 
 
 .header__link {
+    position: relative;
     display: block;
     padding-top: 32px;
-    padding-bottom: 33px;
-    position: relative;
+    padding-bottom: 33px;   
     transition-property: var(--accent-color);
     transition-duration: 250ms;
     font-weight: 500;
@@ -95,10 +95,10 @@ color: #000000;
     align-items: center;
     transition-property: var(--accent-color);
     transition-duration: 250ms;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #757575;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
 
 &:hover,
 &:focus{
