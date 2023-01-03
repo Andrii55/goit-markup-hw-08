@@ -16,7 +16,7 @@
 <body>
     
     
-    <!-- <header class="header">    
+    <header class="header">    
         <div class="container header__main">
             <a href="./index.html" class="header__logo link"> <span>Web</span>Studio</a>
         <nav class="header__nav">
@@ -30,15 +30,48 @@
         <li class="header__list__nav header__icons"><a href="mailto:info@devstudio.com" class="header__links link"><svg width="16" height="12" class="header__icon__envelope"><use href="./img/icons.svg#icon-envelope-hover"></use></svg>info@devstudio.com</a></li>
         <li class="header__list__nav header__icons"><a href="tel:+380961111111" class="header__links link"><svg width="10" height="16" class="header__icon__smartphone"><use href="./img/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
        </ul>
+       <button type="button" class="header__btn__open"><svg width="40" height="40" class="menu_40px"><use href="./img/icons.svg#icon-menu_40px"></use></svg></button>
     </div>
-    </header> -->
+
+ <div class="container header__mob__menu">
+<div class="mobile__menu">
+    <div>
+        <button class="header__btn__close"><svg width="40" height="40" class="close_40px"><use href="./img/icons.svg#icon-close_40px"></use></svg></button>
+        <nav class="header__mob__nav">
+        <ul class="header__mob__list list">
+            <li class="header__mob__list__nav"><a href="./index.html" target="_self" class="header__mob__link link header__active">Студія</a></li>
+            <li class="header__mob__list__nav"><a href="./portfolio.html" target="_self" class="header__mob__link link">Портфоліо</a></li>
+            <li class="header__mob__list__nav"><a href="" class="header__mob__link link">Контакти</a></li>
+        </ul>
+       </nav>
+    </div>
+
+   <div>
+   <ul class="header__mob__info list">
+    <li class="header__mob__info__nav"><a href="tel:+380961111111" class="header__mob__tel link">+38 096 111 11 11</a></li>
+    <li class="header__mob__info__nav"><a href="mailto:info@devstudio.com" class="header__mob__email link">info@devstudio.com</a></li> 
+   </ul>
+
+   <ul class="header__soc list">
+    <li class="header__soc__link link"><div class="header__Instagram__line">Instagram</div></li>
+    <li class="header__soc__link link"><div class="header__Twitter__line">Twitter</div></li>
+    <li class="header__soc__link link"><div class="header__Facebook__line">Facebook</li>
+    <li class="header__soc__link link">LinkedIn</div></li>
+   </ul>
+</div>
+</div>
+</div>
+
+    
+
+    </header>
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open >Замовити послугу</button>
         </div>
-        </section>
+        </section> -->
     
          <!-- <section class="details">
             <div class="container details__container">
@@ -72,22 +105,28 @@
             <div class="container work__container">
             <h2 class="work__title">Чим ми займаємося</h2>
             <ul class="work__link list">
-                <li class="work__links link"><img src="./img/img1.jpg" alt="Фотографії напрямку діяльності" width="370" height="294">
+                <li class="work__links link"><img srcset="./img/img1.jpg 1x, ./img/img1_2x.jpeg 2x" src="./img/img1.jpg" alt="Фотографії напрямку діяльності" width="370" height="294">
                     <div class="work__item">Десктопні додатки</div></li>
-                <li class="work__links link"><img src="./img/img2.jpg" alt="Фотографії напрямку діяльності" width="370" height="294">
+                <li class="work__links link"><img srcset="./img/img2.jpg 1x, ./img/img2_2x.jpeg 2x" src="./img/img2.jpg" alt="Фотографії напрямку діяльності" width="370" height="294">
                     <div class="work__item">Мобільні додатки</div></li>
-                <li class="work__links link"><img src="./img/img3.jpg" alt="Фотографії напрямку діяльності" width="370" height="294">
+                <li class="work__links link"><img srcset="./img/img3.jpg 1x, ./img/img3_2x.jpeg 2x" src="./img/img3.jpg" alt="Фотографії напрямку діяльності" width="370" height="294">
                     <div class="work__item">Дизайнерські рішення</div></li>
             </ul>
             </div>
-        </section> -->
+        </section>  -->
 
-        <!-- <section class="team">
+         <!-- <section class="team">
             <div class="container team__container">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__position link">
-                    <img src="./img/img_photo1.jpg" alt="Наша команда" width="270" height="260">
+                    
+                    <picture>
+                        <source srcset="./img/img_photo1.jpg 1x, ./img/img_photo1_2x.jpeg 2x" media="(min-wight:1200px)">
+                        <source srcset="./img/img_photo1_tab.jpeg 1x, ./img/img_photo1_tab_2x.jpeg 2x" media="(min-wight:768px)">
+                        <source srcset="./img/img_photo1_mob.jpeg 1x, ./img/img_photo1_mob_2x.jpeg 2x" media="(min-wight:480px)">
+                        <img srcset="./img/img_photo1.jpg 1x, ./img/img_photo1_2x.jpeg 2x" src="./img/img_photo1.jpg" alt="Наша команда" width="270" height="260">
+                    </picture>
                         <h3 class="team__name title">Ігор Дем'яненко</h3>
                         <p class="team__text">Product Designer</p>
                         <ul class="team__soc list">
@@ -105,8 +144,13 @@
                             </svg></a></li>
                         </ul>
                 </li>
-                <li class="team__position link">
-                    <img src="./img/img_photo2.jpg" alt="Наша команда" width="270" height="260">
+                <li class="team__position link">   
+                    <picture>
+                        <source srcset="./img/img_photo2.jpg 1x, ./img/img_photo2_2x.jpeg 2x" media="(min-wight:1200px)">
+                        <source srcset="./img/img_photo2_tab.jpeg 1x, ./img/img_photo2_tab_2x.jpeg 2x" media="(min-wight:768px)">
+                        <source srcset="./img/img_photo2_mob.jpeg 1x, ./img/img_photo2_mob_2x.jpeg 2x" media="(min-wight:480px)">
+                        <img srcset="./img/img_photo2.jpg 1x, ./img/img_photo2_2x.jpeg 2x" src="./img/img_photo2.jpg" alt="Наша команда" width="270" height="260">
+                    </picture>
                         <h3 class="team__name title">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
                         <ul class="team__soc list">
@@ -124,8 +168,13 @@
                             </svg></a></li>
                         </ul>
                 </li>
-                <li class="team__position link">
-                    <img  src="./img/img_photo3.jpg" alt="Наша команда" width="270" height="260">
+                <li class="team__position link">            
+                    <picture>
+                        <source srcset="./img/img_photo3.jpg 1x, ./img/img_photo3_2x.jpeg 2x" media="(min-wight:1200px)">
+                        <source srcset="./img/img_photo3_tab.jpeg 1x, ./img/img_photo3_tab_2x.jpeg 2x" media="(min-wight:768px)">
+                        <source srcset="./img/img_photo3_mob.jpeg 1x, ./img/img_photo3_mob_2x.jpeg 2x" media="(min-wight:480px)">
+                        <img srcset="./img/img_photo3.jpg 1x, ./img/img_photo3_2x.jpeg 2x" src="./img/img_photo3.jpg" alt="Наша команда" width="270" height="260">
+                    </picture>
                         <h3 class="team__name title">Микола Тарасов</h3>
                         <p class="team__text">Marketing</p>
                         <ul class="team__soc list">
@@ -143,8 +192,13 @@
                             </svg></a></li>
                         </ul>
                 </li>
-                <li class="team__position link">
-                    <img src="./img/img_photo4.jpg" alt="Наша команда" width="270" height="260">
+                <li class="team__position link">                 
+                    <picture>
+                        <source srcset="./img/img_photo4.jpg 1x, ./img/img_photo4_2x.jpeg 2x" media="(min-wight:1200px)">
+                        <source srcset="./img/img_photo4_tab.jpeg 1x, ./img/img_photo4_tab_2x.jpeg 2x" media="(min-wight:768px)">
+                        <source srcset="./img/img_photo4_mob.jpeg 1x, ./img/img_photo4_mob_2x.jpeg 2x" media="(min-wight:480px)">
+                        <img srcset="./img/img_photo4.jpg 1x, ./img/img_photo4_2x.jpeg 2x" src="./img/img_photo4.jpg" alt="Наша команда" width="270" height="260">
+                    </picture>
                         <h3 class="team__name title">Михайло Єрмаков</h3>
                         <p class="team__text">UI Designer</p>
                         <ul class="team__soc list">
@@ -162,12 +216,10 @@
                             </svg></a></li>
                         </ul>
                 </li>
-            </ul>
-
-            
+            </ul>    
            </div>
         
-        </section> -->
+        </section>  -->
         <!-- <section class="customers">
             <div class="container customers__container">
                 <h2 class="customers__title title">Постійні клієнти</h2>
@@ -180,7 +232,7 @@
                     <li class="customers__items"><a href="#" class="customers__link link"><svg width="106" height="60" class="customers__Logo"><use href="./img/icons.svg#icon-Logo-6"></use></svg></a></li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- <footer>
         <section class="footer">
@@ -264,5 +316,6 @@
         </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
