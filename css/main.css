@@ -247,6 +247,17 @@ body {
   top: 0px;
   left: 0px;
   right: 0px;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+@media screen and (min-width: 768px) {
+  .header__mob__menu {
+    display: none;
+  }
+}
+.header__mob__menu.is-header {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .header__btn__close {
@@ -520,11 +531,12 @@ body {
 }
 
 .details__icons {
-  width: 100%;
   margin-bottom: 30px;
+  height: 127px;
+  width: 100%;
   background-color: #F5F4FA;
   fill: #212121;
-  height: 127px;
+  padding: 25px 100px;
 }
 @media screen and (min-width: 480px) {
   .details__icons {
@@ -565,7 +577,6 @@ body {
 }
 
 .detalist__item {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1192,8 +1203,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   transform: translate(-50%, -50%) scale(1);
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1202,6 +1213,12 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: linear;
+}
+@media screen and (min-width: 1200px) {
+  .modal__container {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__btn {
@@ -1228,13 +1245,18 @@ body {
 }
 
 .modal__heading {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__heading {
+    line-height: 1.5;
+  }
 }
 
 .modal__imput__group label {
@@ -1245,6 +1267,11 @@ body {
   color: #757575;
   margin-bottom: 5px;
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .modal__imput__group label {
+    line-height: 1.14;
+  }
 }
 
 .modal__imput__group:nth-child(-n+3) {
@@ -1294,10 +1321,11 @@ body {
 }
 
 .modal__text {
-  width: 448px;
+  width: 370px;
   height: 120px;
   left: 576px;
   top: 519px;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -1331,15 +1359,29 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    width: 448px;
+    height: 120px;
+    font-size: 14px;
+    line-height: 1.14px;
+  }
+}
 
 label.modal__politik__label {
-  display: flax;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+  font-size: 12px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  label.modal__politik__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__politic__check2 {
@@ -1349,7 +1391,7 @@ label.modal__politik__label {
   border-radius: 2px;
   margin-right: 10px;
   justify-content: center;
-  display: flax;
+  display: flex;
   align-items: center;
 }
 .modal__politic__check2 svg {
@@ -1361,7 +1403,7 @@ label.modal__politik__label {
   background-color: var(--accent-color);
 }
 .modal__politic__check:checked + label > span:checked + label > span svg {
-  fill: var(--color-white);
+  fill: #FFFFFF;
 }
 
 .modal__contract {
@@ -1373,10 +1415,26 @@ label.modal__politik__label {
   display: block;
   position: absolute;
   right: 0;
-  bottom: 5px;
-  width: 112px;
+  bottom: 0px;
+  width: 97px;
   height: 1px;
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__contract {
+    padding-left: 3px;
+    color: var(--accent-color);
+  }
+  .modal__contract::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 112px;
+    height: 1px;
+    background-color: var(--accent-color);
+  }
 }
 
 .modal__contract__span {
@@ -1385,10 +1443,10 @@ label.modal__politik__label {
 
 .modal__form__btn {
   display: inline-block;
-  display: flax;
+  display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 113px;
+  margin-left: auto;
   margin-right: auto;
   font-weight: 700;
   font-size: 16px;

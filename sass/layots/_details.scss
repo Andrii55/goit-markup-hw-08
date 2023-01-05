@@ -59,11 +59,12 @@
 
 
 .details__icons{
-        width: 100%;
         margin-bottom: 30px;
+        height: 127px;
+        width: 100%;
         background-color: #F5F4FA;
         fill: #212121;
-        height: 127px;
+        padding: 25px 100px;
         
 
     @media screen and (min-width: 480px) {        
@@ -102,7 +103,6 @@
 
 
 .detalist__item {
-        font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #757575;

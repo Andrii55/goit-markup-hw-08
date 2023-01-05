@@ -10,9 +10,10 @@
     transition-timing-function: linear;  
 
     &.is-hidden .modal__container{
-        transform: translate(-50%, -50%) scale(0);
-       
+        transform: translate(-50%, -50%) scale(0); 
     }
+    
+
 }
 
 
@@ -21,8 +22,8 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     transform: translate(-50%, -50%) scale(1);
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -31,6 +32,11 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 
 } 
 
@@ -64,14 +70,19 @@
 }
 
 .modal__heading{
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 
-margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.5;
+    }
+    
 }
 
 .modal__imput__group label{
@@ -82,6 +93,11 @@ margin-bottom: 10px;
     color: #757575;
     margin-bottom: 5px;
     display: block;
+
+
+        @media screen and (min-width: 1200px) {            
+            line-height: 1.14;
+        }
     }
     
     
@@ -141,10 +157,11 @@ margin-bottom: 10px;
 
      
     .modal__text{
-        width: 448px;
+        width: 370px;
         height: 120px;
         left: 576px;
         top: 519px;
+        margin-bottom: 20px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         resize: none;
@@ -165,20 +182,33 @@ margin-bottom: 10px;
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
             }
+        
+            @media screen and (min-width: 1200px) {
+                width: 448px;
+                height: 120px;
+                font-size: 14px;
+                line-height: 1.14px;
+             
+            }
         }
         
       
     
     
     label.modal__politik__label{
-    display: flax;
-    align-items: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-   
+        margin-bottom: 30px;
+        display: flex;
+        align-items: baseline;       
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: #757575;
+
+
+    @media screen and (min-width: 1200px) {       
+        font-size: 14px;
+        line-height: 1.71;
+    }
     }
     
     .modal__politic__check2{
@@ -188,7 +218,7 @@ margin-bottom: 10px;
         border-radius: 2px;
         margin-right: 10px;
         justify-content: center;
-        display: flax;
+        display: flex;
         align-items: center;
         
         & svg{
@@ -201,7 +231,7 @@ margin-bottom: 10px;
         background-color: var(--accent-color);
 
         &:checked + label > span svg{
-            fill: var(--color-white);
+            fill: #FFFFFF;
         }
     }
     
@@ -216,11 +246,32 @@ margin-bottom: 10px;
             display: block;
             position: absolute;
             right: 0;
-            bottom: 5px;
-            width: 112px;
+            bottom: 0px;
+            width: 97px;
             height: 1px;
             background-color: var(--accent-color);
         
+        }
+    
+        @media screen and (min-width: 768px) {
+            
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-left: 3px;
+            color: var(--accent-color);
+    
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 5px;
+                width: 112px;
+                height: 1px;
+                background-color: var(--accent-color);
+            
+            }
         }
     }
     
@@ -231,24 +282,25 @@ margin-bottom: 10px;
     
     
     .modal__form__btn{
-        display: inline-block;
-        display: flax;
-        align-items: center;
-        text-align: center;
-        margin-left: 113px;
-        margin-right: auto;
-        
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
-        
-        padding: 10px 52px;
-        background: #188CE8;
-        border: #188CE8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        cursor: pointer;
-        }
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            
+            padding: 10px 52px;
+            background: #188CE8;
+            border: #188CE8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            cursor: pointer;
+
+            }
         

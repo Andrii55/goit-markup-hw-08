@@ -199,7 +199,23 @@
     top: 0px;
     left: 0px;
     right: 0px;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: linear;  
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-header{
+        transform: translate(-50%, -50%) scale(0);
+    }
 }
+
+
+
+
+
 .header__btn__close {
     cursor: pointer;
     display: block;
