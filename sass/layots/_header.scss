@@ -185,7 +185,6 @@
 
 .header__mob__menu {
     display: none;
-    // display: block;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -197,9 +196,7 @@
     transition-duration: 250ms;
     transition-timing-function: linear;  
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+
     &.is-open{
         display: block;
     }

@@ -245,11 +245,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-@media screen and (min-width: 768px) {
-  .header__mob__menu {
-    display: none;
-  }
-}
 .header__mob__menu.is-open {
   display: block;
 }
