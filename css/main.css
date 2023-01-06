@@ -1380,6 +1380,7 @@ label.modal__politik__label {
   label.modal__politik__label {
     font-size: 14px;
     line-height: 1.71;
+    justify-content: center;
   }
 }
 
