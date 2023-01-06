@@ -81,6 +81,9 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: linear;
     
         @media screen and (min-width: 1200px) {
             justify-content: flex-start;
@@ -163,7 +166,8 @@
     transition-duration: 250ms;
     transition-timing-function: linear;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: #2196F3;
     }
 

@@ -31,7 +31,7 @@
         .header__list{
             display: flex;
 
-            & .header__item:not(:last-child) {
+            & .header__item:not(:last-child) .header__link {
                 margin-right: 50px;
             }
         }
@@ -77,13 +77,13 @@
             }
         }
 
+        .header__item:first-child .header__contacts{
+            margin-right: 40px;
+        }
+
         .header__contact{
             margin-left: auto;
             display: flex;
-
-            & .header__item:not(:last-child){
-                margin-right: 40px;
-            }
         }
 
         .header__contacts {
