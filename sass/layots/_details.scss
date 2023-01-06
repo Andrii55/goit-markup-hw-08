@@ -5,7 +5,7 @@
 
 .details__container {
         padding-top: 60px;
-        padding-bottom: 0px;
+        padding-bottom: 15px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 60px;
@@ -37,16 +37,18 @@
 }
 
 .details__list {
-    width: 100%;
-    
-    @media screen and (min-width: 768px) {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+    
+    
+    @media screen and (min-width: 768px) {
+        
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2); 
     }
     @media screen and (min-width: 1200px) {
-        display: block;
         width: calc((100% - 4 * 30px) / 4); 
     }
 
@@ -92,17 +94,14 @@
         text-transform: uppercase;
         color: #212121;
 
-    @media screen and (min-width: 480px) {
-        text-align: center;   
-    }
-
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         justify-content: flex-start;
     }
 }
 
 
 .detalist__item {
+        font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #757575;
