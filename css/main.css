@@ -1426,14 +1426,8 @@ label.modal__politik__label {
     color: var(--accent-color);
   }
   .modal__contract::after {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
     bottom: 5px;
     width: 112px;
-    height: 1px;
-    background-color: var(--accent-color);
   }
 }
 

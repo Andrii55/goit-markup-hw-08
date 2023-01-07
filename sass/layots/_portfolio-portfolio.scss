@@ -1,24 +1,45 @@
 .portfolio__container{
-    padding-top: 35px;
-    padding-bottom: 95px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+    @media screen and (min-width: 480px) {
+        
+
+    }
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 35px;
+        padding-bottom: 95px;
+    }
 }
 
 
 
 .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: -30px;
+       
+       
+    @media screen and (min-width: 768px) {
+            margin-right: -30px;
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
+        & .portfolio__list__name:last-child{
+            margin-right: auto;
+           
+        }
     }
-    & .portfolio__list__name:not(:last-child){
-        margin-right: 27px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: -30px;
+
     }
 }
-
-
-
 
 
 .portfolio__list__name{
@@ -27,19 +48,49 @@
     transition-duration: 250ms;
     transition-timing-function: linear;
 
+    margin-bottom: 30px;
+
         &:hover,
         &:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 & > .portfolio__border
-{
+{   
     padding-top: 20px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+
     
+}      
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin-right: 30px;
+
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            
+            width: calc((100% - 3 * 30px) / 3);
+            margin-right: 30px;
+        }
 }
-}
+
+
+
+        .portfolio__list__name:first-child .portfolio__border{
+            
+            @media screen and (max-width: 767px) {
+                max-height: 110px;        
+            }
+
+            @media screen and (max-width: 1199px) {  
+                height: 146px;
+            }
+        }     
+
 
 
 
@@ -61,6 +112,8 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
+
+    
 }
 
 .portfolio__thumb{
@@ -70,6 +123,8 @@
     &:hover .portfolio__img__text{
         transform: translateY(0%);
     }
+
+    
 }
 
 
@@ -78,11 +133,14 @@
     margin-left: 25px;
     margin-right: auto;
     margin-bottom: 5px;
+
+  
 }
 .portfolio__img__item{
     display: flex;
     margin-left: 25px;
     margin-right: auto;
     margin-bottom: 20px;
+
 
 }
