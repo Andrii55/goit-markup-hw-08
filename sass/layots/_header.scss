@@ -63,7 +63,7 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 33px;   
-    transition-property: var(--accent-color);
+    transition-property: color;
     transition-duration: 250ms;
     font-weight: 500;
     font-size: 14px;
@@ -77,8 +77,8 @@
 }
 }
 
-.header__active:visited{
-    color: #2196F3;
+.header__active{
+    color: var(--accent-color);
 }
 
 // .header__active:visited{
