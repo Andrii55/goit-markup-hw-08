@@ -99,6 +99,11 @@ body {
 .header__logo > span {
   color: #2196F3;
 }
+@media screen and (max-width: 767px) {
+  .header__logo {
+    margin-left: 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 85px;
@@ -218,6 +223,12 @@ body {
   background-color: #FFFFFF;
   transition: fill, 250ms linear;
   padding-top: 10px;
+  margin-left: -16px;
+}
+@media screen and (max-width: 767px) {
+  .header__btn__open {
+    margin-left: -16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__btn__open {
@@ -374,7 +385,7 @@ body {
 
 .works__container {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .works__container {
@@ -384,17 +395,21 @@ body {
 @media screen and (min-width: 1200px) {
   .works__container {
     padding-top: 95px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 }
 
 .work__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 .work__list .works__btn:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .work__list {
+    margin-left: 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .work__list {
@@ -432,7 +447,7 @@ body {
 }
 
 .portfolio__container {
-  padding-top: 40px;
+  padding-top: 0;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
@@ -498,7 +513,7 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .portfolio__list__name:first-child .portfolio__border {
-    height: 146px;
+    height: 148px;
   }
 }
 

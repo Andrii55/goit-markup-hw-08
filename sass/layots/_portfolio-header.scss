@@ -28,6 +28,11 @@
     color: #2196F3;
     }
 
+    @media screen and (max-width: 767px) {
+        margin-left: 24px;
+        
+    }
+
 
     @media screen and (min-width: 768px) {
         margin-right: 85px;
@@ -164,6 +169,11 @@
         background-color: #FFFFFF;
         transition: fill, 250ms linear;
         padding-top: 10px;
+        margin-left: -16px;
+
+        @media screen and (max-width: 767px) {
+            margin-left: -16px;
+        }
 
         @media screen and (min-width: 768px) {
             display: none;

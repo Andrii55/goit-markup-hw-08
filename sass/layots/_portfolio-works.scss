@@ -1,6 +1,6 @@
 .works__container {
         padding-top: 60px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 30px;
@@ -8,7 +8,7 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 95px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
 
     }
 }
@@ -16,14 +16,20 @@
 .work__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        
 
     & .works__btn:not(:last-child) {
         margin-right: 10px;
     }
 
+    @media screen and (max-width: 767px) {
+        margin-left: 24px;
+        
+    }
+
     @media screen and (min-width: 768px) {
         justify-content: center;
+        
     }
 
 }
