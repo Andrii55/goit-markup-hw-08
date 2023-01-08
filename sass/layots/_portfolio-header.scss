@@ -77,12 +77,8 @@
 }
 }
 
-
-
-.header__active:visited{
+.header__active {
     color: var(--accent-color);
-
-   
 }
 
 .header__active::after{
