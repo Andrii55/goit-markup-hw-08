@@ -1,6 +1,7 @@
 .header{
     background-color: #FFFFFF;
-    border-bottom: #ECECEC; 
+    border-bottom: 1px solid #ECECEC; 
+    
 }
 
 .header__main {
@@ -82,31 +83,16 @@
 }
 
 .header__active::after{
-    
-
-    @media screen and (min-width: 768px) {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -1px;
         content: '';
         display: block;
         height: 4px;
         width: 100%;
         background-color: var(--accent-color);
         border-radius: 2px;
-    }
 
-    @media screen and (min-width: 1200px) {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        content: '';
-        display: block;
-        height: 4px;
-        width: 100%;
-        background-color: var(--accent-color);
-        border-radius: 2px;
-    }
 }
 
 
@@ -266,6 +252,10 @@
     &:focus {
     color: var(--accent-color);
 }
+}
+
+.header__mob__active {
+    color: var(--accent-color);
 }
 
 
