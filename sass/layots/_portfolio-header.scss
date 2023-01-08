@@ -192,6 +192,7 @@
 .header__mob__menu {
     display: none;
     position: fixed;
+    z-index: 2;
     width: 100vw;
     height: 100vh;
     background-color: #FFFFFF;
@@ -212,7 +213,7 @@
 
 .mobile__menu{
     position: relative;
-    overflow: hidden;
+   
     display: flex;
     flex-direction: column;
     height: 100%;

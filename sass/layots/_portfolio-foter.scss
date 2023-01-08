@@ -192,6 +192,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -208,13 +209,6 @@
         text-transform: uppercase;
         color: #FFFFFF;
 
-    @media screen and (min-width: 480px) {
-               
-    }
-
-    @media screen and (min-width: 768px) {
-        
-    }
 
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
@@ -240,19 +234,20 @@
 &:hover,
 &:focus{
     outline: transparent;
-    border-color: var(--accent-color);}
+    border-color: var(--accent-color);
+}
 
 
     @media screen and (min-width: 768px) {
         display: flex;
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 170px;
     }
 
     @media screen and (min-width: 1200px) {
         display: block;
         width: 360px;
-        margin-right: 12px;
+        margin-right: 10px;
+        margin-left: 0;
     }
 
 

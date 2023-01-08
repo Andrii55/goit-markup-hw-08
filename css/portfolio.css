@@ -246,6 +246,7 @@ body {
 .header__mob__menu {
   display: none;
   position: fixed;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: #FFFFFF;
@@ -262,7 +263,6 @@ body {
 
 .mobile__menu {
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -524,6 +524,7 @@ body {
 
 .portfolio__img__text {
   position: absolute;
+  z-index: 1;
   top: 0;
   height: 100%;
   width: 100%;
@@ -768,15 +769,15 @@ body {
 @media screen and (min-width: 768px) {
   .footer__form__email {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 170px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__form__email {
     display: block;
     width: 360px;
-    margin-right: 12px;
+    margin-right: 10px;
+    margin-left: 0;
   }
 }
 .footer__form__email::-moz-placeholder {

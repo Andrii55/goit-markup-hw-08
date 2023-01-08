@@ -1061,7 +1061,7 @@ body {
   .footer__form__email {
     display: block;
     width: 360px;
-    margin-right: 12px;
+    margin-right: 10px;
   }
 }
 .footer__form__email::-moz-placeholder {
