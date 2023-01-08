@@ -77,13 +77,13 @@
 }
 }
 
-
-
 .header__active:visited{
-    color: var(--accent-color);
-
-   
+    color: #2196F3;
 }
+
+// .header__active:visited{
+//     color: var(--accent-color);
+// }
 
 .header__active::after{
     
@@ -196,8 +196,8 @@
 .header__mob__menu {
     display: none;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     top: 0px;
     left: 0px;
@@ -215,8 +215,6 @@
 
 
 .mobile__menu{
-    position: relative;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     height: 100%;

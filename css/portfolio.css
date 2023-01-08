@@ -513,6 +513,15 @@ body {
   }
 }
 
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__thumb:hover .portfolio__img__text, .portfolio__thumb:focus .portfolio__img__text {
+  cursor: pointer;
+  transform: translateY(0%);
+}
+
 .portfolio__img__text {
   position: absolute;
   top: 0;
@@ -529,14 +538,6 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: linear;
-}
-
-.portfolio__thumb {
-  position: relative;
-  overflow: hidden;
-}
-.portfolio__thumb:hover .portfolio__img__text {
-  transform: translateY(0%);
 }
 
 .portfolio__img__title {
